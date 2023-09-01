@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/crud-spring
+    username: postgres
+    password: Hieu31102003@
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  thymeleaf:
+    prefix: file:src/main/resources/templates/
+    cache: false
+
+    # Static resources reloading during development
+    resources:
+      static-locations: file:src/main/resources/static/
+      cache-period: 0
+    suffix: .html
